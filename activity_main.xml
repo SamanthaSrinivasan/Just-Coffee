@@ -1,1 +1,154 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"></EditText>
+
+        <TextView
+            style="@style/CustomText"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="16sp"
+            android:text="TOPPINGS"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/whippedcream_checkbox"
+            style="@style/CustomText"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="10dp"
+            android:text="Whipped Cream"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/nutella_checkbox"
+            style="@style/CustomText"
+            android:layout_marginBottom="16sp"
+            android:paddingLeft="10dp"
+            android:text="Nutella"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <CheckBox
+            android:id="@+id/cocoaPowder_checkbox"
+            style="@style/CustomText"
+            android:layout_marginBottom="20sp"
+            android:paddingLeft="10dp"
+            android:text="Cocoa Powder"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            style="@style/CustomText"
+            android:text="QUANTITY"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="140dp">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16sp"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                style="@style/CustomText"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16sp"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/CustomText"
+            android:layout_marginTop="16dp"
+            android:text="ORDER SUMMARY"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            style="@style/CustomText"
+            android:layout_marginTop="16dp"
+            android:text="$ 0"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            style="@style/CustomText"
+            android:layout_marginTop="19sp"
+            android:layout_marginBottom="10dp"
+            android:onClick="submitOrder"
+            android:text="Order"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/c" />
+    </LinearLayout>
+
+</ScrollView>
