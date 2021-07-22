@@ -1,6 +1,6 @@
 # JustCoffee
 
-##Coffee Ordering App using xml and java - User Input Interactive App
+## Coffee Ordering App using xml and java - User Input Interactive App
 
 ### User can input their choices according to their specific needs.
 ### Bill is calculated.
